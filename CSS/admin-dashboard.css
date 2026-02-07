@@ -1,0 +1,136 @@
+/* ===== BODY ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+    /* background image with overlay for readability */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/dashboard.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+}
+
+/* ===== HEADER ===== */
+header {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* semi-transparent header */
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px); /* modern blur effect */
+    color: white;
+    z-index: 1000;
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #000000;
+}
+
+/* ===== NAV ===== */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: #d15252;
+}
+
+/* LOGOUT BUTTON */
+.btn-danger {
+    border-radius: 20%;
+     background-color: rgba(29, 29, 29, 0.781);
+ border: 2px solid #000000;  
+  color: #FDFBD4;
+}
+
+.btn-danger:hover{
+    background-color: #000000;
+  border: 2px solid #d15252;  
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+    max-width: 1200px;
+    margin: 120px auto 40px; /* margin-top to avoid header overlap */
+}
+
+/* ===== HEADER BOX ===== */
+.header-box h1,
+#todayDate {
+    color: #FDFBD4; /* contrast against background */
+}
+
+/* ===== TABLE ===== */
+.table-container {
+    background-color: rgba(255, 255, 255, 0.15); /* semi-transparent for blending */
+    color: #000000;
+    border: 2px solid #080a02;
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px); /* subtle blur for table background */
+}
+
+/* STATUS LABELS */
+.status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Pending {
+    background: #FFF3E0;
+    color: #141f00;
+}
+
+.Approved {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.Rejected {
+    background: #FFEBEE;
+    color: #C62828;
+}
+
+/* ACTION BUTTONS */
+.action-btn {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    transform: scale(1.2);
+}
+
+.approve-btn { color: #2ECC71; }
+.delete-btn { color: #E74C3C; }
+.view-btn { color: #C05800; }
+
+/* SEARCH BOX */
+#searchName {
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* MODAL */
+.modal-header-custom {
+    background: #000000;
+    color: white;
+}
